@@ -14,6 +14,10 @@
         function getResult() {
             var amount = document.getElementById('amount').value;
             var num = document.getElementById('num').value;
+            var unit = 100;
+
+            var x = Math.floor((amount / num) / unit) * unit;
+            var y = amount - (x * num);
         }
     </script>
 </body>
