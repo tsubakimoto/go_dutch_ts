@@ -18,6 +18,13 @@
 
             var x = Math.floor((amount / num) / unit) * unit;
             var y = amount - (x * num);
+
+            var _x = Math.ceil((amount / num) / unit) * unit;
+            var _y = (_x * num) - amount;
+
+            document.getElementById('result').innerHTML =
+                '一人' + x + '円だと' + y + '円足りません。' +
+                '一人' + _x + '円だと' + _y + '円余ります。';
         }
     </script>
 </body>
